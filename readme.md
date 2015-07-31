@@ -11,15 +11,12 @@ This module is based on the core of the [minilock-cli](https://www.npmjs.com/pac
 
 ```js
 var minilock = require('minilock')
-  minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, encrypt) {
-    minilock.decryptStream(bob.email, bob.passphrase, function (err, decrypt) {
-        var stream = fs.createReadStream('test.js')
-          .pipe(encrypt)
-          .pipe(decrypt)
-          .pipe(fs.createWriteStream('test-copy.js'))
-        })
-      })
-    })
+minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, encrypt) {
+  minilock.decryptStream(bob.email, bob.passphrase, function (err, decrypt) {
+      var stream = fs.createReadStream('test.js')
+        .pipe(encrypt)
+        .pipe(decrypt)
+        .pipe(fs.createWriteStream('test-copy.js'))
   })
 })
 ```
