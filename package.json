@@ -1,0 +1,24 @@
+{
+  "name": "minilock",
+  "version": "1.0.0",
+  "description": "encrypt and decrypt with minilock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnp/minilock.git"
+  },
+  "keywords": [
+    "encryption",
+    "decryption",
+    "cryptography"
+  ],
+  "author": "Finn Pauls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finnp/minilock/issues"
+  },
+  "homepage": "https://github.com/finnp/minilock#readme"
+}
