@@ -30,3 +30,11 @@ minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, enc
 ### decryptStream(email, passphrase, callback)
 
 **callback(error, decryptingStream)**
+
+### publicKeyFromId(id)
+
+returns a Uint8Array
+
+### idFromPublicKey(publicKey)
+
+publicKey as Uint8Array
