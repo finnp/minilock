@@ -17,6 +17,9 @@ minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, enc
         .pipe(encrypt)
         .pipe(decrypt)
         .pipe(fs.createWriteStream('test-copy.js'))
+      decrypt.on('sender', function (minilockID) {
+        console.log('sender was', minilockID)
+      })
   })
 })
 ```
@@ -30,6 +33,8 @@ minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, enc
 ### decryptStream(email, passphrase, callback)
 
 **callback(error, decryptingStream)**
+
+the decryptingStream is also emiting the sender miniLockID with a 'sender' event
 
 ### publicKeyFromId(id)
 
