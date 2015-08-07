@@ -7,6 +7,8 @@ WIP
 
 This module is based on the core of the [minilock-cli](https://www.npmjs.com/package/minilock-cli) module.
 
+It's a node implementation of the [miniLock](https://github.com/kaepora/miniLock) encryption.
+
 ## example
 
 ```js
@@ -26,15 +28,12 @@ minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, enc
 
 ## api
 
-### encryptStream(email, passphrase, toid, callback)
+### encryptStream(email, passphrase, toid)
 
-**callback(error, encryptingStream)**
 
-### decryptStream(email, passphrase, callback)
+### decryptStream(email, passphrase)
 
-**callback(error, decryptingStream)**
-
-the decryptingStream is also emiting the sender miniLockID with a 'sender' event
+emits the sender's miniLockID with a 'sender' event
 
 ### publicKeyFromId(id)
 
