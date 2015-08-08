@@ -27,9 +27,12 @@ minilock.encryptStream(alice.email, alice.passphrase, bob.id, function (err, enc
 ```
 
 ## api
+Note: The streaming interfaces will load the entire input stream into memory.
 
-### encryptStream(email, passphrase, toid)
+### encryptStream(email, passphrase, toid[, opts])
 
+Options
+* `fileName` fileName for the encryption (will be empty by default)
 
 ### decryptStream(email, passphrase)
 
