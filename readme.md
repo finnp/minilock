@@ -33,6 +33,7 @@ Note: The streaming interfaces will load the entire input stream into memory.
 
 Options
 * `fileName` fileName for the encryption (will be empty by default)
+* `chunkSize` chunkSize to use
 
 ### decryptStream(email, passphrase)
 

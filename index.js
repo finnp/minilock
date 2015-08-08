@@ -11,3 +11,4 @@ module.exports.getKeyPair = getKeyPair
 module.exports.publicKeyFromId = util.publicKeyFromId
 module.exports.idFromPublicKey = util.idFromPublicKey
 module.exports.getMiniLockID = util.idFromPublicKey
+
