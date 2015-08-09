@@ -3,7 +3,7 @@ var decrypt = require('./lib/decrypt')
 var util = require('./lib/util')
 var getKeyPair = require('./lib/getkeypair.js')
 
-module.exports.encryptStream = encrypt.encryptStream
+module.exports.encryptStream = encrypt
 module.exports.decryptStream = decrypt.decryptStream
 
 module.exports.getKeyPair = getKeyPair
